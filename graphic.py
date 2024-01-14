@@ -76,7 +76,7 @@ def draw(img, theta):
     cv2.imshow("Frame:", img)
     
 
-while theta <= math.acos(2 / 3):
+while theta <= math.acos(2 / 3): #fly off angle
     img = np.zeros((500, 500, 3), dtype = "uint8")
     av = calc_av(theta)
     ad = (dt * av)
